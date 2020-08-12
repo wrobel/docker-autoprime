@@ -1,7 +1,7 @@
 FROM perl:5.20
 RUN \
     apt-get update -qq \
-    && apt-get install -qy apache2
+    && apt-get install -qy apache2 \
     && apt-get clean
 
 RUN groupadd www
